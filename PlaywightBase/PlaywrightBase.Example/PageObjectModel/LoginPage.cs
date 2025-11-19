@@ -1,4 +1,5 @@
 ﻿using Microsoft.Playwright;
+using PlaywrightBase.Example.Settings;
 using PlaywrightBase.Web.Core;
 
 namespace PlaywrightBase.Example.PageObjectModel
@@ -9,6 +10,11 @@ namespace PlaywrightBase.Example.PageObjectModel
         private ILocator _password => Page.GetByPlaceholder("Password");
         private ILocator _loginButton => Page.GetByText("Login");
 
+        public async Task GotoAsync()
+        {
+            var url = SettingsServices.BaseUrl;
+            await Page.GotoAsync();
+        }
         public async Task Login(string username, string password)
         {
             await _username.FillAsync(username);
