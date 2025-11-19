@@ -13,7 +13,7 @@ namespace PlaywrightBase.Example.PageObjectModel
         public async Task GotoAsync()
         {
             var url = SettingsServices.BaseUrl;
-            await Page.GotoAsync();
+            await Page.GotoAsync(url);
         }
         public async Task Login(string username, string password)
         {
