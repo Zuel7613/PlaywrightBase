@@ -1,5 +1,5 @@
 ﻿using Microsoft.Playwright;
-using PlaywrightBase.Example.Settings;
+using PlaywrightBase.Web.Settings;
 using PlaywrightBase.Web.Core;
 
 namespace PlaywrightBase.Example.PageObjectModel

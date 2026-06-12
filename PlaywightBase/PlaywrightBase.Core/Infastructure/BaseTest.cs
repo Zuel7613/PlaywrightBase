@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using PlaywrightBase.Core.Configuration;
 
 namespace PlaywrightBase.Core.Infastructure
 {

@@ -1,7 +1,7 @@
 ﻿using PlaywrightBase.Core.Configuration;
 using PlaywrightBase.Core.Configuration.Models;
 
-namespace PlaywrightBase.Example.Settings
+namespace PlaywrightBase.Web.Settings
 {
     public static class SettingsServices
     {

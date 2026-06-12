@@ -1,5 +1,5 @@
 ﻿using PlaywrightBase.Example.PageObjectModel;
-using PlaywrightBase.Example.Settings;
+using PlaywrightBase.Web.Settings;
 using PlaywrightBase.Web.Core;
 
 namespace PlaywrightBase.Example.TestCases
