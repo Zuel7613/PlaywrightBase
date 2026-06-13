@@ -1,4 +1,4 @@
-﻿using PlaywrightBase.Core.Infastructure;
+﻿using PlaywrightBase.Core.Infrastructure;
 
 namespace PlaywrightBase.Web
 {

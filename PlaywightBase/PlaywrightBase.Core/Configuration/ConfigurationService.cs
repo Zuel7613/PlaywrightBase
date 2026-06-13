@@ -11,14 +11,14 @@ namespace PlaywrightBase.Core.Configuration
         public static TSection? GetSection<TSection>()
             where TSection : class, new()
         {
-            string sectionName = typeof(TSection).Name;
+            var sectionName = typeof(TSection).Name;
             return Root.Value.GetSection(sectionName).Get<TSection>(); // Access the configuration safely through Lazy.Value
         }
 
         // Configuration initialization will only happen when it is accessed for the first time, potentially improving performance if the configuration is not always needed.
         private static IConfigurationRoot InitializeConfiguration()
         {
-            var settingsFileName = "appsettings.json";
+            const string settingsFileName = "appsettings.json";
             string? executionDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             var settingsFilePath = Path.Combine(executionDir ?? throw new Exception(), settingsFileName);
 

@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace PlaywrightBase.Core.Infastructure
+namespace PlaywrightBase.Core.Infrastructure
 {
     [Parallelizable(scope: ParallelScope.All)]
     [TestFixture]

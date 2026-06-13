@@ -1,5 +1,4 @@
-﻿
-using PlaywrightBase.Example.PageObjectModel;
+﻿using PlaywrightBase.Example.PageObjectModel;
 using PlaywrightBase.Web.Settings;
 using PlaywrightBase.Web.Core;
 
@@ -22,6 +21,7 @@ namespace PlaywrightBase.Example.TestCases.Login
             await Page.GotoAsync(SettingsServices.BaseUrl);
             await Expect(Page).ToHaveTitleAsync("Swag Labs");
             await _loginPage.Login(SettingsServices.Username, SettingsServices.Password);
+            await Expect(Page).ToHaveURLAsync("https://www.saucedemo.com/inventory.html");
         }
     }
 }
